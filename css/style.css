@@ -8,12 +8,15 @@
 
 h1{
     font-size: 4rem;
+    font-weight: bold;
 }
-h2{
+h2
     font-size: 1.625rem;
+    font-weight: bold;
 }
 h3{
     font-size: 1.2rem;
+    
 }
 /*Fondo*/
 html, body, .cover{
@@ -22,7 +25,7 @@ html, body, .cover{
 
 section{
     background: black;
-    border: solid blue;
+    /*border: solid blue;*/
     padding-top: 50px;
     padding-bottom: 50px;;
     
@@ -30,7 +33,7 @@ section{
 
 section div.contenido{
     width: 1100px;
-    border: solid orange;
+    /*border: solid orange;*/
     margin: auto;
     
 }
@@ -56,7 +59,7 @@ section.headerp{
     left: 0px;
     right: 0px;
     bottom: 0px;
-    
+    border-bottom: 8px solid #222;
 }
 
 nav{
@@ -102,7 +105,15 @@ div.login span:hover{
     padding-left: 5px;
     color:black;
 }
-.presentacion span{
+#email2{
+    width: 80%;
+    height: 48px;
+    border-radius: 2px 0px 0px 2px;
+    border: solid 1px #73C5E0;
+    padding-left: 5px;
+    color:black;
+}
+.preguntas span,.presentacion span{
     background-color: #ad0911 ;
     padding:1rem;
     padding-bottom: 15px;
@@ -116,6 +127,7 @@ div.login span:hover{
     cursor: pointer;
     background-color:#72060c;
     transition: all 0.5s ease;
+
 }
 
 /*contenidoV*/
@@ -130,16 +142,29 @@ div.login span:hover{
     width: 59%;
     text-align: center;
     align-items: center;
+    
+	
+	
 }
+
+
+
+
 .texto h1{
     font-size: 3.125rem;
     line-height: 1.1;
-    margin-bottom: 1.5rem;
+    /*margin-bottom: 1.5rem;*/
+    display:inline-block;
+	vertical-align:middle;
+	line-height:normal;
 }
 .texto h2{
     font-size: 1.625rem;
     line-height: 1.1;
-    margin-bottom: 11.5rem;
+    /*margin-bottom: 11.5rem;*/
+    display:inline-block;
+	vertical-align:middle;
+	line-height:normal;
 }
 
 
@@ -161,6 +186,10 @@ div.login span:hover{
     width: 313px;
     z-index: 1;
 }
+.tv,.descarga,.dispositivos ,.preguntas  {
+    border-bottom: 8px solid #222;
+
+}
 /*Descargas*/
 
 
@@ -178,9 +207,88 @@ div.login span:hover{
     width: 264px;
     z-index: 1;
 }
+
+.continterno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255,255,255,.25);
+    box-shadow: 0 0 4em 0 #000;
+    border-radius: 15px;
+    transform: translate(109px, -154px);
+    background: black;
+    
+}
 /**Preguntas*/
+.preguntas h2,h3{
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+.ContP{
+    width: 900px;
+    margin: auto;
+
+}
+.ContP div{
+    text-align: left;
+    font-size: 20px;
+}
+.pregunta {
+    background: #303030;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.respuesta{
+    background: #303030;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
 
 
+.pregunta p, .respuesta p {
+    padding: 10px;
+    padding-left: 20px;
+}
 
+}
+.respuesta hr{
+    border: 1px solid #262626;
+}
+.pregunta:hover .respuesta{
+    max-height: 1000px;    
+}
+
+.respuesta{
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .4s;
+}
+/*pire*/
+footer{
+    background: black;
+    /*border: solid blue;*/
+    padding-top: 50px;
+    padding-bottom: 50px;;
+    columns: 4 10px;
+    /*padding: 70px 45px;*/
+}
+
+
+.footercontet{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer p{
+    padding: 10px;
+    
+}
 
 
