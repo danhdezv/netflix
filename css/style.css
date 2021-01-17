@@ -94,7 +94,7 @@ div.login span:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    align-content: center;
 }
 
 .presentacion input{
@@ -142,7 +142,7 @@ div.login span:hover{
     width: 59%;
     text-align: center;
     align-items: center;
-    
+    align-content: center;
 	
 	
 }
